@@ -4,6 +4,7 @@ import * as Yup from "yup";
 import axios from "axios";
 
 
+
 const UserForm = ({ errors, touched, values, status }) => {
     const [state, setState] = useState([]);
     console.log(state)
@@ -28,8 +29,8 @@ const UserForm = ({ errors, touched, values, status }) => {
                 name="username"
                 placeholder="username"
             />
-            {touched.name && errors.name && (
-                <p className="error">{errors.name}</p>
+            {touched.username && errors.username && (
+                <p className="error">{errors.username}</p>
             )}
             <br /> <br />
             <Field
@@ -52,8 +53,10 @@ const UserForm = ({ errors, touched, values, status }) => {
 
                 
             </Form>
-            </div>
-    )
+            {state.map(user  => (<div><p key={user.id}><h2>Welcome</h2></p> </div> ))} 
+            </div> 
+           
+    ) 
     
 
 
@@ -63,18 +66,18 @@ const UserForm = ({ errors, touched, values, status }) => {
 
 
                 const formikHOC = withFormik({
-                    mapPropsToValues({ name, password }) {
+                    mapPropsToValues({ username, password }) {
                         return {
-                            name: name || "",
-                            password: password || "",
+                            username: username || "",
+                            password: password || ""
                         };
                     },
                     validationSchema: Yup.object().shape({
-                        name: Yup.string()
+                        username: Yup.string()
                             .required("username required"),
         
                         password: Yup.string()
-                            .required("password required"),
+                            .required("password required")
                     }),
                 
                     handleSubmit(values, { setStatus, resetForm }) {
