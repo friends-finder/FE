@@ -1,6 +1,7 @@
-import './App.css';
 import { withFormik, Form, Field } from "formik";
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import * as Yup from "yup";
+import axios from "axios";
 
 
 const UserForm = ({ errors, touched, values, status }) => {
@@ -8,12 +9,15 @@ const UserForm = ({ errors, touched, values, status }) => {
     console.log(state)
     useEffect(() => {
         if (status) {
-            setUsers([...state, status]);
+            setState([...state, status]);
         }
     }, [status]);
 
 
-    return ( <div>
+    return ( 
+    
+    
+    <div>
         <h1>Friend Finder Login</h1>
     
         <Form>
@@ -21,7 +25,7 @@ const UserForm = ({ errors, touched, values, status }) => {
                 className="field"
                 component="input"
                 type="text"
-                name="name"
+                name="username"
                 placeholder="username"
             />
             {touched.name && errors.name && (
@@ -43,38 +47,52 @@ const UserForm = ({ errors, touched, values, status }) => {
                 <button
                     type="submit"
                 >
-                    Onboard User
+                    Login
                 </button>
 
                 
             </Form>
             </div>
     )
-    const formikHOC = withFormik({
-        mapPropsToValues({ name, password }) {
-            return {
-                name: name || "",
-                password: role || ""
-            };
-        },
-        validationSchema: Yup.object().shape({
-            name: Yup.string()
-                .required("username required"),
-            password: Yup.string()
-                .required("password required."),
-        }),
-        handleSubmit(values, { setStatus, resetForm }) {
-            axios
-                .post("https://reqres.in/api/users", values)
-                .then(res => {
-                    console.log("handleSubmit: then: res: ", res);
-                    setStatus(res.data);
-                    resetForm();
-                })
-                .catch(err => console.error("handleSubmit: catch: err: ", err));
-        }
-    });
     
-    }
-    const UserFormWithFormik = formikHOC(UserForm);
-    export default UserForm;
+
+
+                }
+
+
+
+
+                const formikHOC = withFormik({
+                    mapPropsToValues({ name, password }) {
+                        return {
+                            name: name || "",
+                            password: password || "",
+                        };
+                    },
+                    validationSchema: Yup.object().shape({
+                        name: Yup.string()
+                            .required("username required"),
+        
+                        password: Yup.string()
+                            .required("password required"),
+                    }),
+                
+                    handleSubmit(values, { setStatus, resetForm }) {
+                        axios
+                            .post("https://reqres.in/api/ffusers", values)
+                            .then(res => {
+                                console.log("handleSubmit: then: res: ", res);
+                                setStatus(res.data);
+                                resetForm();
+                            })
+                            .catch(err => console.error("handleSubmit: catch: err: ", err));
+                    }
+                });
+                
+                const UserFormWithFormik = formikHOC(UserForm);
+                
+                export default UserFormWithFormik;
+                
+
+
+
