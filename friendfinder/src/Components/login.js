@@ -2,6 +2,7 @@ import { withFormik, Form, Field } from "formik";
 import React, { useEffect, useState } from 'react';
 import * as Yup from "yup";
 import axios from "axios";
+import '../index.css';
 
 
 
@@ -15,7 +16,7 @@ const UserForm = ({ errors, touched, values, status }) => {
 
 
             axios
-                .get(`https://randomuser.me/api/?results=6&nat=us`)
+                .get(`https://randomuser.me/api/?results=12&nat=us`)
                 .then(res => {
                     setState(res.data.results);
                     console.log(res.data.results)
@@ -74,16 +75,11 @@ const UserForm = ({ errors, touched, values, status }) => {
 
             {status && status.username && (
 
-                <div>
+
+<div class="people">
 
                     <br />
 
-                    <h1>Welcome, {status.username}</h1>
-                    <h2>Here's some cool people to meet!</h2>
-                    <br />  <br />
-               
-
-                    {console.log(state.picture)}
 
 
                     {state.map(x => {
@@ -94,13 +90,7 @@ const UserForm = ({ errors, touched, values, status }) => {
                         return (
 
 
-                            <div>
-
-                               
-
-
-
-                             
+                              <div class="person">
 
                                 <h3>{x.name.first} {x.name.last}</h3>
 
@@ -124,27 +114,7 @@ const UserForm = ({ errors, touched, values, status }) => {
 
                                 <br /> <br /> 
 
-
-
-
-
-                                <br /> <br />
-
-
-
-
-
-                        
-
-                            </div>
-
-
-                            
-
-                           
-                            
-
-
+</div>
                         )
 
                     })}

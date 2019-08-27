@@ -11,3 +11,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.people {
+  margin: auto; 
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1500px;
+}
+
+.person {
+  margin: 15px; 
+  width: 220px;
+  box-sizing: border-box;
+  padding: 30px;
+  -webkit-box-shadow: inset 0px 4px 149px 19px rgba(145,199,226,1);
+-moz-box-shadow: inset 0px 4px 149px 19px rgba(145,199,226,1);
+box-shadow: inset 0px 4px 149px 19px rgba(145,199,226,1);
+}
+
+.person img {
+  border: 10px solid #FAEDC3;
+  -webkit-box-shadow: 6px 6px 27px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 6px 27px -11px rgba(0,0,0,0.75);
+box-shadow: 6px 6px 27px -11px rgba(0,0,0,0.75);
+}
+
+.person button {
+border: 0;
+    padding: 10px; 
+    font-size: 15px;
+    -webkit-box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
+-moz-box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
+box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
+}
+
+button {
+  border: 0;
+  padding: 10px; 
+  font-size: 15px;
+  -webkit-box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
+-moz-box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
+box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
+}
