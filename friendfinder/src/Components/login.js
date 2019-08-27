@@ -16,7 +16,7 @@ const UserForm = ({ errors, touched, values, status }) => {
 
 
             axios
-                .get(`https://randomuser.me/api/?results=12&nat=us`)
+                .get(`https://randomuser.me/api/?results=20&nat=us`)
                 .then(res => {
                     setState(res.data.results);
                     console.log(res.data.results)

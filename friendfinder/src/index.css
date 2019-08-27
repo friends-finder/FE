@@ -5,6 +5,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+    background: url("./images/trigeo.jpg");
+  background-size: 100%;
+    
 }
 
 code {
@@ -20,13 +23,15 @@ code {
 }
 
 .person {
+  color: #FAEDC3;
   margin: 15px; 
-  width: 220px;
+  width: 270px;
   box-sizing: border-box;
   padding: 30px;
-  -webkit-box-shadow: inset 0px 4px 149px 19px rgba(145,199,226,1);
--moz-box-shadow: inset 0px 4px 149px 19px rgba(145,199,226,1);
-box-shadow: inset 0px 4px 149px 19px rgba(145,199,226,1);
+  background-color: #91c7e2;
+  -webkit-box-shadow: inset -2px 198px 157px 23px rgba(5,5,5,1);
+  -moz-box-shadow: inset -2px 198px 157px 23px rgba(5,5,5,1);
+  box-shadow: inset -2px 198px 157px 23px rgba(5,5,5,1);
 }
 
 .person img {
