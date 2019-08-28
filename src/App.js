@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
-import LoginStuff from './Components/login'
+import LoginStuff from './Components/login';
+import { Route } from 'react-router-dom';
+
 
 
 
@@ -9,8 +11,17 @@ function App() {
     <div className="App">
      
 
-     <LoginStuff />
+  
 
+
+
+
+  <Route exact path="/" component={LoginStuff} />
+  
+    <button to="/">Logout</button>
+
+
+    <br />  <br />
 
 
     </div>

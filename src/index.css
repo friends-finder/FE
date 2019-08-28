@@ -5,9 +5,58 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+    background: url("./images/trigeo.jpg");
+  background-size: 100%;
+    
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.people {
+  margin: auto; 
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1500px;
+}
+
+.person {
+  color: #FAEDC3;
+  margin: 15px; 
+  width: 270px;
+  box-sizing: border-box;
+  padding: 30px;
+  background-color: #91c7e2;
+  -webkit-box-shadow: inset -2px 198px 157px 23px rgba(5,5,5,1);
+  -moz-box-shadow: inset -2px 198px 157px 23px rgba(5,5,5,1);
+  box-shadow: inset -2px 198px 157px 23px rgba(5,5,5,1);
+}
+
+.person img {
+  border: 10px solid #FAEDC3;
+  -webkit-box-shadow: 6px 6px 27px -11px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 6px 27px -11px rgba(0,0,0,0.75);
+box-shadow: 6px 6px 27px -11px rgba(0,0,0,0.75);
+}
+
+.person button {
+border: 0;
+    padding: 10px; 
+    font-size: 15px;
+    -webkit-box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
+-moz-box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
+box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
+}
+
+button {
+  border: 0;
+  padding: 10px; 
+  font-size: 15px;
+  -webkit-box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
+-moz-box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
+box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
 }
