@@ -6,6 +6,7 @@ import '../index.css';
 
 
 
+
 const UserForm = ({ errors, touched, values, status }) => {
     const [state, setState] = useState([]);
 
@@ -17,6 +18,7 @@ const UserForm = ({ errors, touched, values, status }) => {
 
             axios
                 .get(`https://randomuser.me/api/?results=20&nat=us`)
+
                 .then(res => {
                     setState(res.data.results);
                     console.log(res.data.results)
@@ -75,10 +77,10 @@ const UserForm = ({ errors, touched, values, status }) => {
 
             {status && status.username && (
 
-
 <div class="people">
 
                     <br />
+
 
 
 
@@ -89,8 +91,8 @@ const UserForm = ({ errors, touched, values, status }) => {
 
                         return (
 
-
                               <div class="person">
+
 
                                 <h3>{x.name.first} {x.name.last}</h3>
 
@@ -115,6 +117,7 @@ const UserForm = ({ errors, touched, values, status }) => {
                                 <br /> <br /> 
 
 </div>
+
                         )
 
                     })}
