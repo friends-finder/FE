@@ -5,8 +5,22 @@ import axios from "axios";
 import styled from 'styled-components'
 import '../App.css';
 
-const StyledHeading = styled.h1`font-family: 'Bangers', cursive`;
-const StyledText = styled.h3`font-family: Open Sans`;
+
+const StyledHeading = styled.h1`
+font-size: 50px;
+font-family: 'Bangers', cursive;
+letter-spacing: 2px; 
+`;
+
+const StyledText = styled.h3`
+font-size: 30px;
+color: #E5C687;
+`;
+
+const Header = styled.div `
+background-image: url('images/index-header.jpg');
+`
+
 
 
 const UserForm = ({ errors, touched, values, status }) => {
@@ -19,7 +33,7 @@ const UserForm = ({ errors, touched, values, status }) => {
 
 
             axios
-                .get(`https://randomuser.me/api/?results=6&nat=us`)
+                .get(`https://randomuser.me/api/?results=8&nat=us`)
                 .then(res => {
                     setState(res.data.results);
                     console.log(res.data.results)
@@ -35,12 +49,19 @@ const UserForm = ({ errors, touched, values, status }) => {
     return (
 
 
-        <div>
+        <div class="container">
+
+            <Header><img class="HeaderImg" src="https://friendfinderui.netlify.com/img/index-header.jpg"></img></Header>
+     
             <StyledHeading >The Friend Zone</StyledHeading >
-            <StyledText>Please login below.</StyledText>
+            Our app allows YOU to match with local people and make new friends!
+            <br /> <br />
+
+            <StyledText>Sign Up Below:</StyledText>
             <br />
 
-            <Form>
+            <Form className="theform">
+                What is your name: <br /><br />
                 <Field
                     className="field"
                     component="input"
@@ -52,6 +73,24 @@ const UserForm = ({ errors, touched, values, status }) => {
                     <p className="error">{errors.username}</p>
                 )}
                 <br /> <br />
+
+
+                What most describes you? <br /><br />
+                <Field component="select" className="field" name="type">
+                    <option>-Select-</option>
+                    <option value="Extrovert">Fun/Outgoing (Extroverted)</option>
+                    <option value="Introvert">Home Body (Introverted)</option>
+                    <option value="Both">A little bit of both</option>
+                </Field>
+
+                {touched.type && errors.type && (
+                    <p className="error">{errors.type}</p>
+                )}
+
+
+                <br /> <br />
+
+                Create a Password: <br /><br />
                 <Field
                     className="field"
                     component="input"
@@ -65,12 +104,12 @@ const UserForm = ({ errors, touched, values, status }) => {
                 <br />  <br />
 
                 <button
+                className="create"
                     type="submit"
                 >
-                    Login
+                    Create Account
                 </button>
 
-                <hr />
 
             </Form>
 
@@ -78,14 +117,20 @@ const UserForm = ({ errors, touched, values, status }) => {
 
             {status && status.username && (
 
-                <div>
 
-                    <br />
 
-                    <h1>Welcome, {status.username}</h1>
-                    <h2>Here's some cool people to meet!</h2>
-                    <br />  <br />
-               
+<>
+<div className="welcome"> Welcome {status.username}!   </div>
+
+
+
+<div>These people were matched to you according to your personality.</div>
+
+
+                <div class="people">
+
+                   
+                    
 
                     {console.log(state.picture)}
 
@@ -97,14 +142,11 @@ const UserForm = ({ errors, touched, values, status }) => {
 
                         return (
 
+                        
+                        
 
-                            <div>
+                            <div class="person">
 
-                               
-
-
-
-                             
 
                                 <h3>{x.name.first} {x.name.last}</h3>
 
@@ -124,7 +166,8 @@ const UserForm = ({ errors, touched, values, status }) => {
                     
 
 
-                                <button>Chat with {x.name.first}! </button>
+                                <button>✅ Yes! </button> <button>❌ Nah... </button> <br /><br />
+                         
 
                                 <br /> <br /> 
 
@@ -142,18 +185,34 @@ const UserForm = ({ errors, touched, values, status }) => {
 
                             </div>
 
+                         
 
 
                         )
 
+                    
+               
                     })}
+   <>
+   
+   <div className="events">
+       
+       <br /> <br /> <br />
+       <h1>Recent Events</h1>
 
+       <p>You have no recent events.  Once you've attended your first event you'll be able to post photos and unlock the status feature! </p>
+       
+       </div>
+       
+       
+       </>
 
                 </div>
-
+                </>
             )}
-
+        
         </div>
+       
 
     )
 
@@ -165,10 +224,11 @@ const UserForm = ({ errors, touched, values, status }) => {
 
 
 const formikHOC = withFormik({
-    mapPropsToValues({ username, password }) {
+    mapPropsToValues({ username, password, type }) {
         return {
             username: username || "",
-            password: password || ""
+            password: password || "",
+            type: type || ""
         };
     },
     validationSchema: Yup.object().shape({

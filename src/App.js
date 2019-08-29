@@ -11,16 +11,16 @@ function App() {
     <div className="App">
      
 
-  
-
-
-
 
   <Route exact path="/" component={LoginStuff} />
   
-    <button to="/">Logout</button>
+   <a href="https://friendsfinder.netlify.com/"><button to="">Logout</button></a>
 
 
+
+
+<br /><br />
+Copyright © 2019
     <br />  <br />
 
 

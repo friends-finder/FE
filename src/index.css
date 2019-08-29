@@ -1,15 +1,25 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Lexend Deca', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
-    background: url("./images/trigeo.jpg");
-  background-size: 100%;
     
 
+}
+
+.container {
+  padding: 5em; 
+  margin: 0 auto; 
+  background: white;
+  line-height: 20px; 
+}
+
+.HeaderImg {
+  border-radius: 20px;  
+  width: 100%; 
+  -webkit-box-shadow: 0px -1px 23px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -1px 23px -12px rgba(0,0,0,0.75);
+box-shadow: 0px -1px 23px -12px rgba(0,0,0,0.75);
 }
 
 code {
@@ -18,26 +28,25 @@ code {
 }
 
 .people {
-  margin: auto; 
+  margin: 0 auto; 
   display: flex;
   flex-wrap: wrap;
-  max-width: 1500px;
+  width: 100%; 
+  padding: 30px; 
 }
 
 .person {
-  color: #FAEDC3;
   margin: 15px; 
-  width: 270px;
+  width: 300px; 
   box-sizing: border-box;
   padding: 30px;
-  background-color: #91c7e2;
-  -webkit-box-shadow: inset -2px 198px 157px 23px rgba(5,5,5,1);
-  -moz-box-shadow: inset -2px 198px 157px 23px rgba(5,5,5,1);
-  box-shadow: inset -2px 198px 157px 23px rgba(5,5,5,1);
+  -webkit-box-shadow: inset -1px 82px 210px -29px rgba(145,199,226,1);
+  -moz-box-shadow: inset -1px 82px 210px -29px rgba(145,199,226,1);
+  box-shadow: inset -1px 82px 210px -29px rgba(145,199,226,1);
 }
 
 .person img {
-  border: 10px solid #FAEDC3;
+  border: 10px solid #91c7e2;
   -webkit-box-shadow: 6px 6px 27px -11px rgba(0,0,0,0.75);
 -moz-box-shadow: 6px 6px 27px -11px rgba(0,0,0,0.75);
 box-shadow: 6px 6px 27px -11px rgba(0,0,0,0.75);
@@ -47,16 +56,58 @@ box-shadow: 6px 6px 27px -11px rgba(0,0,0,0.75);
 border: 0;
     padding: 10px; 
     font-size: 15px;
-    -webkit-box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
--moz-box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
-box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
+background: #FAEDC3;
+}
+
+
+.field {
+  padding: 10px; 
+  border: 2px solid #E5C687; 
+  width: 200px;
+  text-align: center; 
+
+}
+
+.error {
+  color: red; 
+  text-decoration: bold; 
+}
+
+.theform {
+  background: #FAEDC3; 
+  padding: 30px; 
+  -webkit-box-shadow: 0px -1px 23px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -1px 23px -12px rgba(0,0,0,0.75);
+box-shadow: 0px -1px 23px -12px rgba(0,0,0,0.75);
+}
+
+.theform .create {
+  border: 0;
+    padding: 10px; 
+    font-size: 15px;
+  background-color: #91c7e2;
+}
+
+.hellomessage {
+  padding: 2px; 
+}
+
+.usermessage {
+  color: red; 
 }
 
 button {
   border: 0;
   padding: 10px; 
   font-size: 15px;
-  -webkit-box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
--moz-box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
-box-shadow: inset 0px 4px 48px 19px rgba(238,217,176,1);
+background-color: #91c7e2;
 }
+
+.welcome {
+  font-size: 30px; 
+  padding: 50px; 
+}
+
+ .events {
+   margin: 0 auto; 
+ }
