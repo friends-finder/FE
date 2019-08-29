@@ -2,11 +2,19 @@ import { withFormik, Form, Field } from "formik";
 import React, { useEffect, useState } from 'react';
 import * as Yup from "yup";
 import axios from "axios";
-import styled from "styled-components";
-import '../index.css';
+import styled from 'styled-components'
+import '../App.css';
 
-const StyledHeading = styled.h1`font-family: 'Bangers', cursive`;
-const StyledText = styled.h3`font-family: Open Sans`;
+const StyledHeading = styled.h1`
+font-size: 60px;
+font-family: 'Bangers', cursive
+`;
+
+const StyledText = styled.h3`
+font-size: 30px;
+font-family: Open Sans
+`;
+
 
 const UserForm = ({ errors, touched, values, status }) => {
     const [state, setState] = useState([]);
@@ -18,7 +26,7 @@ const UserForm = ({ errors, touched, values, status }) => {
 
 
             axios
-                .get(`https://randomuser.me/api/?results=20&nat=us`)
+                .get(`https://randomuser.me/api/?results=6&nat=us`)
                 .then(res => {
                     setState(res.data.results);
                     console.log(res.data.results)
@@ -35,8 +43,8 @@ const UserForm = ({ errors, touched, values, status }) => {
 
 
         <div>
-            <h1>The Friend Zone</h1>
-            <h3>Please login below.</h3>
+            <StyledHeading >The Friend Zone</StyledHeading >
+            <StyledText>Please login below.</StyledText>
             <br />
 
             <Form>
@@ -77,11 +85,16 @@ const UserForm = ({ errors, touched, values, status }) => {
 
             {status && status.username && (
 
-
-<div class="people">
+                <div>
 
                     <br />
 
+                    <h1>Welcome, {status.username}</h1>
+                    <h2>Here's some cool people to meet!</h2>
+                    <br />  <br />
+               
+
+                    {console.log(state.picture)}
 
 
                     {state.map(x => {
@@ -92,7 +105,13 @@ const UserForm = ({ errors, touched, values, status }) => {
                         return (
 
 
-                              <div class="person">
+                            <div>
+
+                               
+
+
+
+                             
 
                                 <h3>{x.name.first} {x.name.last}</h3>
 
@@ -116,7 +135,22 @@ const UserForm = ({ errors, touched, values, status }) => {
 
                                 <br /> <br /> 
 
-</div>
+
+
+
+
+                                <br /> <br />
+
+
+
+
+
+
+
+                            </div>
+
+
+
                         )
 
                     })}

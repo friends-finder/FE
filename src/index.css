@@ -6,8 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-    background: url("./images/trigeo.jpg");
-  background-size: 100%;
+  background: grey;
     
 
 }
