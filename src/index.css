@@ -8,10 +8,14 @@ body {
 }
 
 .container {
-  padding: 5em; 
+  padding: 46px; 
   margin: 0 auto; 
   background: white;
   line-height: 20px; 
+}
+
+.events {
+ text-align: center; 
 }
 
 .HeaderImg {
@@ -22,28 +26,38 @@ body {
 box-shadow: 0px -1px 23px -12px rgba(0,0,0,0.75);
 }
 
+
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 .people {
-  margin: 0 auto; 
   display: flex;
   flex-wrap: wrap;
-  width: 100%; 
+ justify-content: center; 
   padding: 30px; 
 }
 
 .person {
-  margin: 15px; 
+  margin: 10px; 
   width: 300px; 
   box-sizing: border-box;
-  padding: 30px;
   -webkit-box-shadow: inset -1px 82px 210px -29px rgba(145,199,226,1);
   -moz-box-shadow: inset -1px 82px 210px -29px rgba(145,199,226,1);
   box-shadow: inset -1px 82px 210px -29px rgba(145,199,226,1);
 }
+
+
+@media only screen and (max-width: 400px) {
+  .person {
+    margin: 5px;
+  }
+}
+
+
 
 .person img {
   border: 10px solid #91c7e2;
@@ -63,7 +77,7 @@ background: #FAEDC3;
 .field {
   padding: 10px; 
   border: 2px solid #E5C687; 
-  width: 200px;
+  width: 100px;
   text-align: center; 
 
 }
@@ -106,8 +120,18 @@ background-color: #91c7e2;
 .welcome {
   font-size: 30px; 
   padding: 50px; 
+  line-height: 40px; 
 }
 
- .events {
-   margin: 0 auto; 
+
+
+ .yesorno {
+   margin: 1px; 
  }
+
+
+ @media only screen and (max-width: 500px) {
+  .people {
+    margin: 0 auto; 
+  }
+}

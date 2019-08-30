@@ -10,11 +10,15 @@ const StyledHeading = styled.h1`
 font-size: 50px;
 font-family: 'Bangers', cursive;
 letter-spacing: 2px; 
+line-height: 50px; 
+
+
 `;
 
 const StyledText = styled.h3`
 font-size: 30px;
 color: #E5C687;
+line-height: 50px; 
 `;
 
 const Header = styled.div `
@@ -127,6 +131,7 @@ const UserForm = ({ errors, touched, values, status }) => {
 <div>These people were matched to you according to your personality.</div>
 
 
+
                 <div class="people">
 
                    
@@ -166,7 +171,10 @@ const UserForm = ({ errors, touched, values, status }) => {
                     
 
 
-                                <button>✅ Yes! </button> <button>❌ Nah... </button> <br /><br />
+                               <div className> <button>✅ Yes! </button> <button>❌ Nah... </button> </div>
+                               
+                               
+                   
                          
 
                                 <br /> <br /> 
