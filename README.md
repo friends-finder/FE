@@ -1,10 +1,16 @@
 # The Friend Zone
 
 <center>
-Our app allows YOU to match with local people and make new friends!
+Our app allows YOU to match with local people and make new friends! <br /><br />
 
 
 <a href="https://friendfinderui.netlify.com/" target=_blank><img src="images/webscreenshot" alt=""></a>
+
+<br />
+
+<br />
+
+
 <img src="images/people.png" alt="">
 </center>
 
