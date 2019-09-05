@@ -54,7 +54,7 @@ Jeffrey Orndorff
 
 <a href="https://friendfinderui.netlify.com/" target=_blank>The Friend Zone - Official Website</a>
 
-<a href="https://trello.com/b/sTShoQIY/friend-finder" target=_blank>Case Study</a>
+<a href="https://docs.google.com/document/d/1eR53ciaygYFUZZZyFScopzOW49PDsB_IisJ1y1wTNVg/edit?usp=sharing" target=_blank>Case Study</a>
 
 <a href="https://github.com/friends-finder" target=_blank>GitHub Organization</a>
 
