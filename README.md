@@ -4,7 +4,10 @@
 Our app allows YOU to match with local people and make new friends! <br /><br />
 
 
-<a href="https://friendfinderui.netlify.com/" target=_blank><img src="images/webscreenshot" alt=""></a>
+
+[![Watch the video](images/webscreenshot)](https://streamable.com/eb1t9)
+
+## Click the image to watch the demo
 
 <br />
 
@@ -52,13 +55,13 @@ Jeffrey Orndorff
 # Links
 
 
-<a href="https://friendfinderui.netlify.com/" target=_blank>The Friend Zone - Official Website</a>
+- <a href="https://friendfinderui.netlify.com/" target=_blank>The Friend Zone - Official Website</a>
 
-<a href="https://docs.google.com/document/d/1eR53ciaygYFUZZZyFScopzOW49PDsB_IisJ1y1wTNVg/edit?usp=sharing" target=_blank>Case Study</a>
+- <a href="https://docs.google.com/document/d/1eR53ciaygYFUZZZyFScopzOW49PDsB_IisJ1y1wTNVg/edit?usp=sharing" target=_blank>Case Study</a>
 
-<a href="https://github.com/friends-finder" target=_blank>GitHub Organization</a>
+- <a href="https://github.com/friends-finder" target=_blank>GitHub Organization</a>
 
-<a href="https://trello.com/b/sTShoQIY/friend-finder" target=_blank>Trello Board</a>
+- <a href="https://trello.com/b/sTShoQIY/friend-finder" target=_blank>Trello Board</a>
 
 
 
