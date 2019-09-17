@@ -3,11 +3,11 @@
 <center>
 Our app allows YOU to match with local people and make new friends! <br /><br />
 
-
+## Click the image to watch the demo
 
 [![Watch the video](images/webscreenshot)](https://streamable.com/eb1t9)
 
-## Click the image to watch the demo
+
 
 <br />
 
