@@ -1,24 +1,40 @@
 # The Friend Zone
 
-<center>
-Our app allows YOU to match with local people and make new friends! <br /><br />
 
-## Click the image to watch the demo
+The Friend Zone is an app idea designed to allow people to find strictly platonic friendships in their local area based on their personality. This social media platform focuses on bringing back real & close friendships. 
 
-[![Watch the video](images/webscreenshot)](https://streamable.com/eb1t9)
+
+<br />
+<br />
+
+
+## Web UI 
+By: <a href="" target="_blank">Cody Hayes</a> & <a href="" target="_blank">Jeffrey Orndorff</a>
+
+
+<a href="https://friendfinderui.netlify.com/" target=_blank><img src="images/fe_ui.png" alt="Friend Finder user interface preview" /></a>
 
 
 
 <br />
-
 <br />
 
 
-<img src="images/people.png" alt="">
-</center>
+## Front End
+By: <a href="" target="_blank">Sable Childs</a> & <a href="" target="_blank">Jashele Tillman</a>
 
 
-<br /><br />
+<a href="https://friendsfinder.netlify.com/" target=_blank><img src="images/fe_fe2.png" alt="Friend Finder Front end preview" /></a>
+<a href="https://friendsfinder.netlify.com/" target=_blank><img src="images/fe_fe1.png" alt="Friend Finder Front end preview" /></a>
+
+
+
+
+<br />
+<br />
+
+
+
 
 # About
 
@@ -26,9 +42,9 @@ Our app allows YOU to match with local people and make new friends! <br /><br />
 This app is intended to solve a connectivity problem that technology has created. As technology advances, the world is more connected, but connectivity in the physical world is dwindling. Our goal is to create a social media platform that focuses on bringing back close and real friendships. We want for users to move away from sharing highlights to a large group of people to move out into the real world and experiencing common joys with one another.
 
 
-<center>
+
 <img src="images/app.png" alt="">
-</center>
+
 
 <br /><br />
 
@@ -36,18 +52,18 @@ This app is intended to solve a connectivity problem that technology has created
 # The Team
 
 **Team Lead:** <br />
-James Starks
+James Starks - <a href="https://github.com/Shadowborn" target=_blank>GitHub</a>
 <br /><br />
 
 
 **Front End Developers:**<br />
-Sable Childs<br />
-Jashele Tillman
+Sable Childs - <a href="https://github.com/sablemadison" target=_blank>GitHub</a><br />
+Jashele Tillman - <a href="https://github.com/jasheloper" target=_blank>GitHub</a>
 <br /><br />
 
 **User Interface:**<br />
-Cody Hayes<br />
-Jeffrey Orndorff
+Cody Hayes - <a href="https://github.com/Cody-Hayes97" target=_blank>GitHub</a><br />
+Jeffrey Orndorff - <a href="https://github.com/Jeffreyo3" target=_blank>GitHub</a>
 
 <br /><br />
 
