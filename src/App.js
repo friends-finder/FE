@@ -14,6 +14,8 @@ function App() {
       <br />
       Copyright © 2019
       <br /> <br />
+      <a href="https://friendfinderui.netlify.com/" target="_blank">Return Home</a>
+      <br />  <br />  <br />
     </div>
   );
 }

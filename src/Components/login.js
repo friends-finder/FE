@@ -7,7 +7,7 @@ import "../App.css";
 
 const StyledHeading = styled.h1`
   font-size: 50px;
-  font-family: "Bangers", cursive;
+  font-family: 'Staatliches', cursive;
   letter-spacing: 2px;
   line-height: 50px;
 `;
