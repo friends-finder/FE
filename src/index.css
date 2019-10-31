@@ -1,33 +1,37 @@
 body {
   margin: 0;
-  font-family: 'Lexend Deca', sans-serif;
+  font-family: "Lexend Deca", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-    
+}
 
+a {
+  text-decoration: none;
+  color: #c5a66b;
+}
+
+a:hover {
+  color: #91c7e2;
 }
 
 .container {
-  padding: 46px; 
-  margin: 0 auto; 
+  padding: 46px;
+  margin: 0 auto;
   background: white;
-  line-height: 20px; 
+  line-height: 20px;
 }
 
 .events {
- text-align: center; 
+  text-align: center;
 }
 
 .HeaderImg {
-  border-radius: 20px;  
-  width: 100%; 
-  -webkit-box-shadow: 0px -1px 23px -12px rgba(0,0,0,0.75);
--moz-box-shadow: 0px -1px 23px -12px rgba(0,0,0,0.75);
-box-shadow: 0px -1px 23px -12px rgba(0,0,0,0.75);
+  border-radius: 20px;
+  width: 100%;
+  -webkit-box-shadow: 0px -1px 23px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -1px 23px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -1px 23px -12px rgba(0, 0, 0, 0.75);
 }
-
-
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -37,19 +41,18 @@ code {
 .people {
   display: flex;
   flex-wrap: wrap;
- justify-content: center; 
-  padding: 30px; 
+  justify-content: center;
+  padding: 30px;
 }
 
 .person {
-  margin: 10px; 
-  width: 300px; 
+  margin: 10px;
+  width: 300px;
   box-sizing: border-box;
-  -webkit-box-shadow: inset -1px 82px 210px -29px rgba(145,199,226,1);
-  -moz-box-shadow: inset -1px 82px 210px -29px rgba(145,199,226,1);
-  box-shadow: inset -1px 82px 210px -29px rgba(145,199,226,1);
+  -webkit-box-shadow: inset -1px 82px 210px -29px rgba(145, 199, 226, 1);
+  -moz-box-shadow: inset -1px 82px 210px -29px rgba(145, 199, 226, 1);
+  box-shadow: inset -1px 82px 210px -29px rgba(145, 199, 226, 1);
 }
-
 
 @media only screen and (max-width: 400px) {
   .person {
@@ -57,81 +60,80 @@ code {
   }
 }
 
-
-
 .person img {
   border: 10px solid #91c7e2;
-  -webkit-box-shadow: 6px 6px 27px -11px rgba(0,0,0,0.75);
--moz-box-shadow: 6px 6px 27px -11px rgba(0,0,0,0.75);
-box-shadow: 6px 6px 27px -11px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 6px 6px 27px -11px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 6px 27px -11px rgba(0, 0, 0, 0.75);
+  box-shadow: 6px 6px 27px -11px rgba(0, 0, 0, 0.75);
 }
 
 .person button {
-border: 0;
-    padding: 10px; 
-    font-size: 15px;
-background: #FAEDC3;
+  border: 0;
+  padding: 10px;
+  font-size: 15px;
+  background: #faedc3;
 }
 
-
 .field {
-  padding: 10px; 
-  border: 2px solid #E5C687; 
-  width: 100px;
-  text-align: center; 
-
+  padding: 7px;
+  border: 5px solid #e5c687;
+  max-width: 570px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .error {
-  color: red; 
-  text-decoration: bold; 
+  color: red;
+  text-decoration: bold;
 }
 
 .theform {
-  background: #FAEDC3; 
-  padding: 30px; 
-  -webkit-box-shadow: 0px -1px 23px -12px rgba(0,0,0,0.75);
--moz-box-shadow: 0px -1px 23px -12px rgba(0,0,0,0.75);
-box-shadow: 0px -1px 23px -12px rgba(0,0,0,0.75);
+  margin: 0 auto; 
+  max-width: 500px;
+  background: #faedc3;
+  padding: 30px;
+  -webkit-box-shadow: 0px -1px 23px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px -1px 23px -12px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px -1px 23px -12px rgba(0, 0, 0, 0.75);
 }
 
 .theform .create {
   border: 0;
-    padding: 10px; 
-    font-size: 15px;
+  padding: 10px;
+  font-size: 17px;
   background-color: #91c7e2;
+  font-weight: bold;
 }
 
 .hellomessage {
-  padding: 2px; 
+  padding: 2px;
 }
 
 .usermessage {
-  color: red; 
+  color: red;
 }
 
 button {
   border: 0;
-  padding: 10px; 
+  padding: 10px;
   font-size: 15px;
-background-color: #91c7e2;
+  background-color: #91c7e2;
+  font-weight: bold;
 }
 
 .welcome {
-  font-size: 30px; 
-  padding: 50px; 
-  line-height: 40px; 
+  font-size: 30px;
+  padding: 50px;
+  line-height: 40px;
 }
 
+.yesorno {
+  margin: 1px;
+}
 
-
- .yesorno {
-   margin: 1px; 
- }
-
-
- @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   .people {
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 }
