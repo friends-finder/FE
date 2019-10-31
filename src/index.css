@@ -67,7 +67,7 @@ code {
 
 .field {
   padding: 7px;
-  border: 2px solid #e5c687;
+  border: 5px solid #e5c687;
   max-width: 570px;
   text-align: center;
   font-weight: bold;
@@ -80,6 +80,8 @@ code {
 }
 
 .theform {
+  margin: 0 auto; 
+  max-width: 500px;
   background: #faedc3;
   padding: 30px;
   -webkit-box-shadow: 0px -1px 23px -12px rgba(0, 0, 0, 0.75);

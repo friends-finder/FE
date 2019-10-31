@@ -65,7 +65,7 @@ const UserForm = ({ errors, touched, values, status }) => {
         {touched.username && errors.username && (
           <p className="error">{errors.username}</p>
         )}
-        <br /> <br />
+        <br /> <br /><br />
         What most describes you? <br />
         <br />
         <Field component="select" className="field" name="type">
@@ -75,7 +75,7 @@ const UserForm = ({ errors, touched, values, status }) => {
           <option value="Both">A little bit of both</option>
         </Field>
         {touched.type && errors.type && <p className="error">{errors.type}</p>}
-        <br /> <br />
+        <br /> <br /><br />
         Create a Password: <br />
         <br />
         <Field
@@ -88,7 +88,7 @@ const UserForm = ({ errors, touched, values, status }) => {
         {touched.password && errors.password && (
           <p className="error">{errors.password}</p>
         )}
-        <br /> <br />
+        <br /> <br /><br />
         <button className="create" type="submit">
           Create Account
         </button>
