@@ -5,6 +5,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+  color: #c5a66b;
+}
+
+a:hover {
+  color: #91c7e2;
+}
+
 .container {
   padding: 46px;
   margin: 0 auto;
